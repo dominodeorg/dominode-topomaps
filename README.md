@@ -8,8 +8,7 @@ have been developed in scope of the DomiNode project.
 
 ## How to use it
 
-The `qgis-projects` subdir contains the relevant QGIS projects and their
-related resources, as stipulated in Kartoza's [QGIS Project synchronization SOP]
+Ensure the relevant data sources are accessible and utilise a version of QGIS Greater than 3.16.0 LTS
 
 ## Projects
 
@@ -19,17 +18,13 @@ related resources, as stipulated in Kartoza's [QGIS Project synchronization SOP]
 
 ## Data
 
-- `qgis-proojects/data/data.gpkg`
+- Postgres Service
 
-  - Custodian: charles@kartoza.com
-  - Description: Local copy of utilised data copied from remote staging 
-    database as well as additional features sourced from public internet 
-    sources.
-  - Source: [Download from google drive]
+  - Custodian: LSD department
+  - Description: Production database.
+  - Service Name: *dominode_production*
+  - Permissions: Read access to the public schema
 
-Note that the *data* directory will be ignored by git and users will be 
-required to download data sources independently and place them within the 
-`qgis-projects/data` directory manually.
+All datasets utilised are remote in nature
 
-[QGIS Project synchronization SOP]: https://docs.google.com/document/d/1JkBSQfYDSvlybmNpwsK2DS0egbIRjkiApVBE2B1cGIA
-[Download from google drive]: https://drive.google.com/file/d/1B3o7bPx1iQH5qMXUGWQO-BwLkeJYlYP7/view?usp=sharing
+Local assests are embedded within project files.
